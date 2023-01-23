@@ -9,9 +9,9 @@ wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.z
 # extract 
 unzip apache-tomcat-9.0.71.zip
 # delete the zip
-rm -rf apache-tomcat-9.0.71.zip
 mv apache-tomcat-9.0.71 tomcat
-sudo chmod -R 755 /opt/tomcat/
+rm -rf apache-tomcat-9.0.71.zip
+sudo chmod -R 755 /opt/tomcat
 #start the tomact
 sudo sh /opt/tomcat/bin/startup.sh 
 # stop the tomact

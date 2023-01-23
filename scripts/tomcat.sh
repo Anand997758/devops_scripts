@@ -5,12 +5,12 @@ sudo amazon-linux-extras install epel -y
 sudo amazon-linux-extras install java-openjdk11 -y
 # install the tomcat
 cd /opt/
-sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.18/bin/apache-tomcat-10.0.18-windows-x64.zip
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.zip
 # extract 
-sudo unzip apache-tomcat-9.0.58-windows-x64.zip
+unzip apache-tomcat-9.0.71.zip
 # delete the zip
-sudo rm -f apache-tomcat-9.0.58-windows-x64.zip
-sudo mv apache-tomcat* tomcat
+rm -rf apache-tomcat-9.0.71.zip
+mv apache-tomcat-9.0.71 tomcat
 sudo chmod -R 755 /opt/tomcat/
 #start the tomact
 sudo sh /opt/tomcat/bin/startup.sh 
